@@ -1,0 +1,49 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fs-brand {
+  font-family: "Comforter Brush", cursive;
+}
+
+.fs-text-500 {
+  font-weight: 500;
+}
+
+header {
+  background-image: url(../assets/img/winter.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.fs-bg-blue-transparent {
+  background: rgba(3, 113, 175, 0.8);
+}
+
+.fs-countdown-number {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .fs-countdown-number {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .fs-countdown-number {
+    width: 6rem;
+    height: 6rem;
+  }
+}/*# sourceMappingURL=style.css.map */

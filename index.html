@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Coming Soon | Free Bootstrap theme by Fyrestrap</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body class="fs-text-500">
+    <!-- Header  -->
+    <header class="vh-100">
+        <div class="container-fluid h-100">
+          <div class="d-flex h-100 row">
+            <div class="col-12 col-md-8 col-lg-6 h-100 d-flex p-lg-0 text-white fs-bg-blue-transparent">
+              <div class="w-100 my-auto pe-2 pe-lg-5">
+                <div class="ps-2 ps-lg-5 w-100 text-center text-md-end fs-border-left">
+                  <h1 class="my-2 display-2 fs-brand">Winter.</h1>
+                  <h6 class="mb-5 text-uppercase fw-bold display-3 text-dark">Is Coming</h6>
+                  
+                  <!-- Count down -->
+                  <div class="container text-right d-flex mb-3">
+                    <ul class="list-unstyled d-flex mx-auto justify-content-center justify-content-md-end gap-3 w-100">        
+                      <li>
+                        <div class="display-6 rounded-circle border border-info d-flex align-items-center justify-content-center fs-countdown-number" id="cdD">00</div>
+                        <p class="text-center text-xs mt-2 small text-dark">Days</p>
+                      </li>
+              
+                      <li>
+                        <div class="display-6 rounded-circle border border-info d-flex align-items-center justify-content-center fs-countdown-number" id="cdH">00</div>
+                        <p class="text-center text-xs mt-2 small text-dark">Hours</p>
+                      </li>
+              
+                      <li>
+                        <div class="display-6 rounded-circle border border-info d-flex align-items-center justify-content-center fs-countdown-number" id="cdM">00</div>
+                        <p class="text-center text-xs mt-2 small text-dark">Minutes</p>
+                      </li>
+              
+                      <li>
+                        <div class="display-6 rounded-circle border border-info d-flex align-items-center justify-content-center fs-countdown-number" id="cdS">00</div>
+                        <p class="text-center text-xs mt-2 small text-dark">Seconds</p>
+                      </li>
+              
+                    </ul>
+                  </div>
+                  
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reprehenderit delectus quasi eligendi maiores consectetur repellat necessitatibus libero deleniti quaerat debitis, odit earum modi. Magni porro iste dolores.</p>      
+
+                  <!-- Social links -->
+                  <div class="container text-right d-flex">
+                    <ul class="list-unstyled d-flex mx-auto justify-content-center justify-content-md-end gap-5 w-100">        
+                      <li>
+                        <a href="#" class="h4 text-dark">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+              
+                      <li>
+                        <a href="#" class="h4 text-dark">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+              
+                      <li>
+                        <a href="#" class="h4 text-dark">
+                          <i class="fab fa-youtube"></i>
+                        </a>
+                      </li>
+              
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-6"></div>
+          </div>
+        </div>
+    </header>
+
+
+    <!-- JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+    <script>
+      // Change the value of countDownEndDate to the day you want to end the count down
+      var countDownEndDate = "August 5, 2022 09:00:00";
+      
+      var endDate = new Date(countDownEndDate).getTime();
+      
+      var x = setInterval(function() {
+      
+        var timeNow = new Date().getTime();
+      
+        var timeLeft = endDate - timeNow;
+      
+        var days    = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hours   = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        if(days < 10) {
+          days = "0" + days;
+        }
+
+        if(hours < 10) {
+          hours = "0" + hours;
+        }
+
+        if(minutes < 10) {
+          minutes = "0" + minutes;
+        }
+
+        if(seconds < 10) {
+          seconds = "0" + seconds;
+        }
+      
+        if (timeLeft > 0) {
+          document.getElementById("cdD").innerHTML = days;
+          document.getElementById("cdH").innerHTML = hours;
+          document.getElementById("cdM").innerHTML = minutes;
+          document.getElementById("cdS").innerHTML = seconds;
+        }
+      }, 1000);
+    </script>
+
+</body>
+</html>
