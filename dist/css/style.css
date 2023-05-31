@@ -11,37 +11,43 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-.fs-brand {
-  font-family: "Comforter Brush", cursive;
+a {
+  color: #fff;
+}
+a:hover {
+  color: #123456;
+}
+
+header {
+  background-image: url(../../assets/img/orange.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
 }
 
 .fs-text-500 {
   font-weight: 500;
 }
-
-header {
-  background-image: url(../assets/img/winter.jpg);
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: bottom;
-}
-
 .fs-bg-blue-transparent {
-  background: rgba(3, 113, 175, 0.8);
+  background: rgba(0, 60, 95, 0.5);
 }
-
+.fs-brand {
+  font-family: "Comforter Brush", cursive;
+}
 .fs-countdown-number {
   width: 3.5rem;
   height: 3.5rem;
 }
-
 @media (min-width: 768px) {
   .fs-countdown-number {
     width: 5rem;
     height: 5rem;
   }
+  .fs-mr--105 {
+    margin-right: -10.5rem;
+  }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .fs-countdown-number {
     width: 6rem;
     height: 6rem;
